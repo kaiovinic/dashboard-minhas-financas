@@ -4,21 +4,19 @@ import { Container, Tag } from "./styles";
 
 interface IHistoryFinanceCardProps {
   tagColor: string;
-  cardColor: string;
   title: string;
   subtitle: string;
   value: string;
 }
 
 const HistoryFinanceCard: React.FC<IHistoryFinanceCardProps> = ({
-  cardColor,
   tagColor,
   title,
   subtitle,
   value,
 }) => {
   return (
-    <Container color={cardColor}>
+    <Container>
       <Tag color={tagColor} />
       <div>
         <span>{title}</span>
