@@ -4,14 +4,12 @@ import MainHeader from "../MainHeader";
 import Aside from "../Aside";
 import Content from "../Content";
 
-type Props = {};
-
-const Layout: React.FC = (props: Props) => {
+const Layout = ({ children }: { children: React.ReactNode }) => {
   return (
     <Grid>
       <MainHeader />
       <Aside />
-      <Content />
+      <Content>{children}</Content>
     </Grid>
   );
 };
